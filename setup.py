@@ -10,14 +10,14 @@ with open(os.path.join(current_directory, 'README.md'), "r") as readme:
     package_description = readme.read()
 
 setup(
-    name="zebra-broadkast",
-    version="0.2.2",
+    name="broadkast",
+    version="0.1.1",
     author="Zebra.com",
-    author_email="scorbett@thezebra.com",
+    author_email="sean.corbett@umontana.edu",
     description="REST/GRPC server implementations of Kube App Discovery for service discovery and broadcast of messages/data.",
     long_description=package_description,
     long_description_content_type="text/markdown",
-    url="https://gitlab.com/thezebra/libraries/zebra-broadkast",
+    url="https://github.com/scorbettUM/broadkast",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

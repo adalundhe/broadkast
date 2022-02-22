@@ -2,8 +2,8 @@ import os
 from typing import Any, List
 import uuid
 from zebra_automate_logging import Logger
-from zebra_kube_app_discovery import InstanceIndex, Query
-from zebra_broadkast.registry import DiscoveredRegistry
+from discovery import InstanceIndex, Query
+from broadkast.registry import DiscoveredRegistry
 from .client import BroadkastClient
 from google.protobuf.json_format import MessageToDict
 from .proto import (

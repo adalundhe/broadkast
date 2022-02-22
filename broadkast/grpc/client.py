@@ -3,7 +3,7 @@ import os
 import uvloop
 uvloop.install()
 from typing import Optional
-from zebra_kube_app_discovery import Query
+from discovery import Query
 from zebra_automate_logging import Logger
 from .proto import (
     KubeConfigUpdate,
