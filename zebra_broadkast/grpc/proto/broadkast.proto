@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+message SelectorQuery {
+    string name = 1;
+    string operator = 2;
+    string value = 3;
+}
+
+message DiscoveredService {
+    string service_name = 1;
+    string instance_address = 2;
+    string instance_id = 3;
+}
+
+message ServiceDiscoveryRequest {
+    optional string method = 1;
+    string service_name = 2;
+    string namespace = 3;
+    optional string service_port = 4;
+    repeated SelectorQuery field_selectors = 5;
+    repeated SelectorQuery label_selectors = 6;
+    optional bool is_new_service = 7;
+}
+
+message ServiceDiscoveryResponse {
+    string service_name = 1;
+    repeated DiscoveredService instances = 2;
+    int32 discovered_count = 3;
+}
+
+message KubeConfigUpdate {
+    string config_filepath = 1;
+    string config_context = 2;
+    optional string namespace = 3;
+}
+
+message KubeConfigUpdateResponse {
+    string config_filepath = 1;
+    string config_context = 2;
+    optional string namespace = 3;
+    string status = 4;
+}
+
+service BroadkastServer {
+    rpc UpdateClusterConfig (KubeConfigUpdate) returns (KubeConfigUpdateResponse) {};
+    rpc DiscoverService (ServiceDiscoveryRequest) returns (ServiceDiscoveryResponse) {};
+}
