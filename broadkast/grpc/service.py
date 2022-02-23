@@ -2,7 +2,7 @@ import os
 from typing import Any, List
 import uuid
 from zebra_automate_logging import Logger
-from discovery import InstanceIndex, Query
+from broadkast.discovery import InstanceIndex, Query
 from broadkast.registry import DiscoveredRegistry
 from .client import BroadkastClient
 from google.protobuf.json_format import MessageToDict

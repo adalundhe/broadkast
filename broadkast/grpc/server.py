@@ -1,6 +1,4 @@
-import asyncio
 import grpc
-import os
 import uvloop
 uvloop.install()
 from zebra_automate_logging import Logger
