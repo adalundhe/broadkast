@@ -11,7 +11,7 @@ with open(os.path.join(current_directory, 'README.md'), "r") as readme:
 
 setup(
     name="broadkast",
-    version="0.1.3",
+    version="0.1.4",
     author="Zebra.com",
     author_email="sean.corbett@umontana.edu",
     description="REST/GRPC server implementations of Kube App Discovery for service discovery and broadcast of messages/data.",
@@ -32,9 +32,8 @@ setup(
         'kubernetes',
         'packaging',
         'fastapi[all]',
-        'zebra-python-cli',
-        'zebra-automate-py-logging',
-        'zebra-kube-app-discovery'
+        'py3cli-tools',
+        'easy-logger-py'
     ],
     python_requires='>=3.8'
 )
