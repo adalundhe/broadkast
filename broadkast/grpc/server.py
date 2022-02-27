@@ -1,7 +1,7 @@
 import grpc
 import uvloop
 uvloop.install()
-from zebra_automate_logging import Logger
+from easy_logger import Logger
 from .service import BroadkastServicer
 from .proto import(
     add_BroadkastServerServicer_to_server

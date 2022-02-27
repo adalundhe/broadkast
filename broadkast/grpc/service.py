@@ -1,7 +1,7 @@
 import os
 from typing import Any, List
 import uuid
-from zebra_automate_logging import Logger
+from easy_logger import Logger
 from broadkast.discovery import InstanceIndex, Query
 from broadkast.registry import DiscoveredRegistry
 from .client import BroadkastClient

@@ -4,7 +4,7 @@ import uvloop
 uvloop.install()
 from typing import Optional
 from broadkast.discovery import Query
-from zebra_automate_logging import Logger
+from easy_logger import Logger
 from .proto import (
     KubeConfigUpdate,
     KubeConfigUpdateResponse,

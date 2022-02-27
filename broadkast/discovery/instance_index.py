@@ -5,7 +5,7 @@ from kubernetes import (
     client, 
     config as kube_config
 )
-from zebra_automate_logging import Logger
+from easy_logger import Logger
 from .queries import Query
 from .instance_ports_collection import InstancePortsCollection
 from .instance import Instance
