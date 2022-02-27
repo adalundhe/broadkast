@@ -4,6 +4,5 @@ grpcio-tools
 stringcase
 packaging
 fastapi[all]
-zebra-python-cli
-zebra-automate-py-logging
-zebra-kube-app-discovery
+py3cli-tools
+easy-logger-py

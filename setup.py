@@ -11,8 +11,8 @@ with open(os.path.join(current_directory, 'README.md'), "r") as readme:
 
 setup(
     name="broadkast",
-    version="0.1.4",
-    author="Zebra.com",
+    version="0.1.5",
+    author="Sean Corbett",
     author_email="sean.corbett@umontana.edu",
     description="REST/GRPC server implementations of Kube App Discovery for service discovery and broadcast of messages/data.",
     long_description=package_description,
